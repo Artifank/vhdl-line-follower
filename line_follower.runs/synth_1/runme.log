@@ -1,0 +1,540 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2700185 on Thu Oct 24 18:46:05 MDT 2019
+  **** IP Build 2699827 on Thu Oct 24 21:16:38 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22008 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 992.148 ; gain = 233.809
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/top.vhd:24]
+INFO: [Synth 8-3491] module 'qtr_senss' declared at 'C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_senss.vhd:5' bound to instance 'u_qtr_senss' of component 'qtr_senss' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/top.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'qtr_senss' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_senss.vhd:15]
+INFO: [Synth 8-3491] module 'qtr_sens' declared at 'C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_sens.vhd:6' bound to instance 'qtr_sens_01' of component 'qtr_sens' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_senss.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'qtr_sens' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_sens.vhd:14]
+WARNING: [Synth 8-614] signal 's_sens' is read in the process but is not in the sensitivity list [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_sens.vhd:62]
+INFO: [Synth 8-256] done synthesizing module 'qtr_sens' (1#1) [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_sens.vhd:14]
+INFO: [Synth 8-3491] module 'qtr_sens' declared at 'C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_sens.vhd:6' bound to instance 'qtr_sens_02' of component 'qtr_sens' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_senss.vhd:33]
+INFO: [Synth 8-3491] module 'qtr_sens' declared at 'C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_sens.vhd:6' bound to instance 'qtr_sens_03' of component 'qtr_sens' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_senss.vhd:34]
+INFO: [Synth 8-3491] module 'qtr_sens' declared at 'C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_sens.vhd:6' bound to instance 'qtr_sens_04' of component 'qtr_sens' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_senss.vhd:35]
+INFO: [Synth 8-3491] module 'qtr_sens' declared at 'C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_sens.vhd:6' bound to instance 'qtr_sens_05' of component 'qtr_sens' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_senss.vhd:36]
+INFO: [Synth 8-3491] module 'qtr_sens' declared at 'C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_sens.vhd:6' bound to instance 'qtr_sens_06' of component 'qtr_sens' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_senss.vhd:37]
+INFO: [Synth 8-3491] module 'qtr_sens' declared at 'C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_sens.vhd:6' bound to instance 'qtr_sens_07' of component 'qtr_sens' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_senss.vhd:38]
+INFO: [Synth 8-3491] module 'qtr_sens' declared at 'C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_sens.vhd:6' bound to instance 'qtr_sens_08' of component 'qtr_sens' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_senss.vhd:39]
+INFO: [Synth 8-3491] module 'qtr_sens' declared at 'C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_sens.vhd:6' bound to instance 'qtr_sens_09' of component 'qtr_sens' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_senss.vhd:40]
+INFO: [Synth 8-3491] module 'qtr_sens' declared at 'C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_sens.vhd:6' bound to instance 'qtr_sens_10' of component 'qtr_sens' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_senss.vhd:41]
+INFO: [Synth 8-3491] module 'qtr_sens' declared at 'C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_sens.vhd:6' bound to instance 'qtr_sens_11' of component 'qtr_sens' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_senss.vhd:42]
+INFO: [Synth 8-3491] module 'qtr_sens' declared at 'C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_sens.vhd:6' bound to instance 'qtr_sens_12' of component 'qtr_sens' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_senss.vhd:43]
+INFO: [Synth 8-3491] module 'qtr_sens' declared at 'C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_sens.vhd:6' bound to instance 'qtr_sens_13' of component 'qtr_sens' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_senss.vhd:44]
+INFO: [Synth 8-3491] module 'qtr_sens' declared at 'C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_sens.vhd:6' bound to instance 'qtr_sens_14' of component 'qtr_sens' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_senss.vhd:45]
+INFO: [Synth 8-3491] module 'qtr_sens' declared at 'C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_sens.vhd:6' bound to instance 'qtr_sens_15' of component 'qtr_sens' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_senss.vhd:46]
+INFO: [Synth 8-3491] module 'qtr_sens' declared at 'C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_sens.vhd:6' bound to instance 'qtr_sens_16' of component 'qtr_sens' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_senss.vhd:47]
+INFO: [Synth 8-3491] module 'numerize_sensors' declared at 'C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/numerize_sensors.vhd:5' bound to instance 'u_numerize' of component 'numerize_sensors' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_senss.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'numerize_sensors' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/numerize_sensors.vhd:11]
+WARNING: [Synth 8-6014] Unused sequential element v_sens_count_reg was removed.  [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/numerize_sensors.vhd:20]
+WARNING: [Synth 8-6014] Unused sequential element v_sens_sum_reg was removed.  [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/numerize_sensors.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'numerize_sensors' (2#1) [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/numerize_sensors.vhd:11]
+WARNING: [Synth 8-614] signal 's_sens_even' is read in the process but is not in the sensitivity list [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_senss.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'qtr_senss' (3#1) [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_senss.vhd:15]
+WARNING: [Synth 8-5640] Port 'i_sel' is missing in component declaration [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/top.vhd:25]
+INFO: [Synth 8-3491] module 'ssd_ctrl' declared at 'C:/Users/Artifank/qtr_sensor_test/qtr_sensor_test.srcs/sources_1/new/ssd_ctrl.vhd:5' bound to instance 'u_ssd_ctrl' of component 'ssd_ctrl' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/top.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'ssd_ctrl' [C:/Users/Artifank/qtr_sensor_test/qtr_sensor_test.srcs/sources_1/new/ssd_ctrl.vhd:13]
+WARNING: [Synth 8-614] signal 's_disp_num' is read in the process but is not in the sensitivity list [C:/Users/Artifank/qtr_sensor_test/qtr_sensor_test.srcs/sources_1/new/ssd_ctrl.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'ssd_ctrl' (4#1) [C:/Users/Artifank/qtr_sensor_test/qtr_sensor_test.srcs/sources_1/new/ssd_ctrl.vhd:13]
+INFO: [Synth 8-3491] module 'pid_controller' declared at 'C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/pid_controller.vhd:5' bound to instance 'u_pid_ctrl' of component 'pid_controller' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/top.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'pid_controller' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/pid_controller.vhd:13]
+WARNING: [Synth 8-6014] Unused sequential element v_err_reg was removed.  [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/pid_controller.vhd:43]
+WARNING: [Synth 8-6014] Unused sequential element v_p_reg was removed.  [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/pid_controller.vhd:45]
+WARNING: [Synth 8-6014] Unused sequential element v_i_reg was removed.  [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/pid_controller.vhd:46]
+WARNING: [Synth 8-6014] Unused sequential element v_d_reg was removed.  [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/pid_controller.vhd:47]
+WARNING: [Synth 8-6014] Unused sequential element s_out_old_reg was removed.  [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/pid_controller.vhd:52]
+INFO: [Synth 8-4471] merging register 'o_err_reg[31:0]' into 's_err_old_reg[31:0]' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/pid_controller.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element o_err_reg was removed.  [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/pid_controller.vhd:54]
+WARNING: [Synth 8-6014] Unused sequential element v_sum_errs_reg was removed.  [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/pid_controller.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'pid_controller' (5#1) [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/pid_controller.vhd:13]
+INFO: [Synth 8-3491] module 'motor_ctrl' declared at 'C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/motor_ctrl.vhd:5' bound to instance 'u_motor_ctrl' of component 'motor_ctrl' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/top.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'motor_ctrl' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/motor_ctrl.vhd:15]
+INFO: [Synth 8-3491] module 'pwm' declared at 'C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/pwmv2.vhd:5' bound to instance 'pwmL' of component 'pwm' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/motor_ctrl.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'pwm' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/pwmv2.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'pwm' (6#1) [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/pwmv2.vhd:11]
+INFO: [Synth 8-3491] module 'pwm' declared at 'C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/pwmv2.vhd:5' bound to instance 'pwmR' of component 'pwm' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/motor_ctrl.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'motor_ctrl' (7#1) [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/motor_ctrl.vhd:15]
+INFO: [Synth 8-3491] module 'color_sens' declared at 'C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/color_sens.vhd:6' bound to instance 'u_color_sens' of component 'color_sens' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/top.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'color_sens' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/color_sens.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'color_sens' (8#1) [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/color_sens.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'top' (9#1) [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/top.vhd:24]
+WARNING: [Synth 8-3917] design top has port o_ssd_dp driven by constant 1
+WARNING: [Synth 8-3917] design top has port o_vgaRed[3] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_vgaRed[2] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_vgaRed[1] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_vgaRed[0] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_vgaGreen[3] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_vgaGreen[2] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_vgaGreen[1] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_vgaGreen[0] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_vgaBlue[3] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_vgaBlue[2] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_vgaBlue[1] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_vgaBlue[0] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_vgaHsync driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_vgaVsync driven by constant 0
+WARNING: [Synth 8-3917] design top has port io_JXADC[6] driven by constant 0
+WARNING: [Synth 8-3917] design top has port io_JXADC[2] driven by constant 0
+WARNING: [Synth 8-3331] design pid_controller has unconnected port clk
+WARNING: [Synth 8-3331] design top has unconnected port io_JXADC[7]
+WARNING: [Synth 8-3331] design top has unconnected port io_JC[7]
+WARNING: [Synth 8-3331] design top has unconnected port i_sw[14]
+WARNING: [Synth 8-3331] design top has unconnected port i_sw[13]
+WARNING: [Synth 8-3331] design top has unconnected port i_sw[12]
+WARNING: [Synth 8-3331] design top has unconnected port i_sw[11]
+WARNING: [Synth 8-3331] design top has unconnected port i_sw[10]
+WARNING: [Synth 8-3331] design top has unconnected port i_sw[9]
+WARNING: [Synth 8-3331] design top has unconnected port i_sw[8]
+WARNING: [Synth 8-3331] design top has unconnected port i_sw[7]
+WARNING: [Synth 8-3331] design top has unconnected port i_sw[6]
+WARNING: [Synth 8-3331] design top has unconnected port i_sw[5]
+WARNING: [Synth 8-3331] design top has unconnected port i_sw[4]
+WARNING: [Synth 8-3331] design top has unconnected port i_sw[3]
+WARNING: [Synth 8-3331] design top has unconnected port i_sw[2]
+WARNING: [Synth 8-3331] design top has unconnected port i_btn[4]
+WARNING: [Synth 8-3331] design top has unconnected port i_btn[3]
+WARNING: [Synth 8-3331] design top has unconnected port i_btn[2]
+WARNING: [Synth 8-3331] design top has unconnected port i_btn[1]
+WARNING: [Synth 8-3331] design top has unconnected port i_btn[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1065.832 ; gain = 307.492
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1065.832 ; gain = 307.492
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1065.832 ; gain = 307.492
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1065.832 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Artifank/line_follower/line_follower.srcs/constrs_1/new/contraints.xdc]
+Finished Parsing XDC File [C:/Users/Artifank/line_follower/line_follower.srcs/constrs_1/new/contraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Artifank/line_follower/line_follower.srcs/constrs_1/new/contraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1171.094 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1171.094 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1171.094 ; gain = 412.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1171.094 ; gain = 412.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1171.094 ; gain = 412.754
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "o_ssd_an" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 's_sens_reg' [C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_sens.vhd:72]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1171.094 ; gain = 412.754
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 11    
+	   3 Input     32 Bit       Adders := 3     
+	  16 Input     31 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 7     
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 16    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 70    
++---Multipliers : 
+	                14x32  Multipliers := 1     
+	                 7x32  Multipliers := 1     
+	                 9x32  Multipliers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 15    
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 117   
+	   4 Input      1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module qtr_sens 
+Detailed RTL Component Info : 
++---Registers : 
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 1     
+Module numerize_sensors 
+Detailed RTL Component Info : 
++---Adders : 
+	  16 Input     31 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module ssd_ctrl 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+Module pid_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     31 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
++---Multipliers : 
+	                14x32  Multipliers := 1     
+	                 7x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     31 Bit        Muxes := 1     
+Module pwm 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+Module motor_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     11 Bit        Muxes := 1     
+Module color_sens 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   2 Input     31 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Multipliers : 
+	                 9x32  Multipliers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   2 Input     31 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design top has port o_ssd_dp driven by constant 1
+WARNING: [Synth 8-3917] design top has port o_vgaRed[3] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_vgaRed[2] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_vgaRed[1] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_vgaRed[0] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_vgaGreen[3] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_vgaGreen[2] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_vgaGreen[1] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_vgaGreen[0] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_vgaBlue[3] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_vgaBlue[2] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_vgaBlue[1] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_vgaBlue[0] driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_vgaHsync driven by constant 0
+WARNING: [Synth 8-3917] design top has port o_vgaVsync driven by constant 0
+WARNING: [Synth 8-3917] design top has port io_JXADC[6] driven by constant 0
+WARNING: [Synth 8-3917] design top has port io_JXADC[2] driven by constant 0
+WARNING: [Synth 8-3331] design pid_controller has unconnected port clk
+WARNING: [Synth 8-3331] design top has unconnected port io_JXADC[7]
+WARNING: [Synth 8-3331] design top has unconnected port io_JC[7]
+WARNING: [Synth 8-3331] design top has unconnected port i_sw[14]
+WARNING: [Synth 8-3331] design top has unconnected port i_sw[13]
+WARNING: [Synth 8-3331] design top has unconnected port i_sw[12]
+WARNING: [Synth 8-3331] design top has unconnected port i_sw[11]
+WARNING: [Synth 8-3331] design top has unconnected port i_sw[10]
+WARNING: [Synth 8-3331] design top has unconnected port i_sw[9]
+WARNING: [Synth 8-3331] design top has unconnected port i_sw[8]
+WARNING: [Synth 8-3331] design top has unconnected port i_sw[7]
+WARNING: [Synth 8-3331] design top has unconnected port i_sw[6]
+WARNING: [Synth 8-3331] design top has unconnected port i_sw[5]
+WARNING: [Synth 8-3331] design top has unconnected port i_sw[4]
+WARNING: [Synth 8-3331] design top has unconnected port i_sw[3]
+WARNING: [Synth 8-3331] design top has unconnected port i_sw[2]
+WARNING: [Synth 8-3331] design top has unconnected port i_btn[4]
+WARNING: [Synth 8-3331] design top has unconnected port i_btn[3]
+WARNING: [Synth 8-3331] design top has unconnected port i_btn[2]
+WARNING: [Synth 8-3331] design top has unconnected port i_btn[1]
+WARNING: [Synth 8-3331] design top has unconnected port i_btn[0]
+INFO: [Synth 8-3886] merging instance 'u_pid_ctrl/s_out_reg[22]' (FD) to 'u_pid_ctrl/s_out_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u_pid_ctrl/s_out_reg[23]' (FD) to 'u_pid_ctrl/s_out_reg[24]'
+INFO: [Synth 8-3886] merging instance 'u_pid_ctrl/s_out_reg[24]' (FD) to 'u_pid_ctrl/s_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'u_pid_ctrl/s_out_reg[25]' (FD) to 'u_pid_ctrl/s_out_reg[26]'
+INFO: [Synth 8-3886] merging instance 'u_pid_ctrl/s_out_reg[26]' (FD) to 'u_pid_ctrl/s_out_reg[27]'
+INFO: [Synth 8-3886] merging instance 'u_pid_ctrl/s_out_reg[27]' (FD) to 'u_pid_ctrl/s_out_reg[28]'
+INFO: [Synth 8-3886] merging instance 'u_pid_ctrl/s_out_reg[28]' (FD) to 'u_pid_ctrl/s_out_reg[29]'
+INFO: [Synth 8-3886] merging instance 'u_pid_ctrl/s_out_reg[29]' (FD) to 'u_pid_ctrl/s_out_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u_pid_ctrl/s_out_reg[30]' (FD) to 'u_pid_ctrl/s_out_reg[31]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1171.094 ; gain = 412.754
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1171.094 ; gain = 412.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1216.914 ; gain = 458.574
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1262.059 ; gain = 503.719
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1266.855 ; gain = 508.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1266.855 ; gain = 508.516
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1266.855 ; gain = 508.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1266.855 ; gain = 508.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1266.855 ; gain = 508.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1266.855 ; gain = 508.516
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |   970|
+|3     |LUT1   |   406|
+|4     |LUT2   |  1339|
+|5     |LUT3   |   981|
+|6     |LUT4   |   466|
+|7     |LUT5   |   326|
+|8     |LUT6   |   861|
+|9     |FDRE   |  1535|
+|10    |LDP    |    16|
+|11    |IBUF   |     5|
+|12    |IOBUF  |    16|
+|13    |OBUF   |    55|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------+-----------------+------+
+|      |Instance        |Module           |Cells |
++------+----------------+-----------------+------+
+|1     |top             |                 |  6978|
+|2     |  u_color_sens  |color_sens       |  1839|
+|3     |  u_motor_ctrl  |motor_ctrl       |   254|
+|4     |    pwmL        |pwm              |   127|
+|5     |    pwmR        |pwm_15           |   127|
+|6     |  u_pid_ctrl    |pid_controller   |   562|
+|7     |  u_qtr_senss   |qtr_senss        |  2644|
+|8     |    qtr_sens_01 |qtr_sens         |   120|
+|9     |    qtr_sens_02 |qtr_sens_0       |   126|
+|10    |    qtr_sens_03 |qtr_sens_1       |   188|
+|11    |    qtr_sens_04 |qtr_sens_2       |   122|
+|12    |    qtr_sens_05 |qtr_sens_3       |   122|
+|13    |    qtr_sens_06 |qtr_sens_4       |   124|
+|14    |    qtr_sens_07 |qtr_sens_5       |   123|
+|15    |    qtr_sens_08 |qtr_sens_6       |   123|
+|16    |    qtr_sens_09 |qtr_sens_7       |   124|
+|17    |    qtr_sens_10 |qtr_sens_8       |   125|
+|18    |    qtr_sens_11 |qtr_sens_9       |   123|
+|19    |    qtr_sens_12 |qtr_sens_10      |   123|
+|20    |    qtr_sens_13 |qtr_sens_11      |   125|
+|21    |    qtr_sens_14 |qtr_sens_12      |   126|
+|22    |    qtr_sens_15 |qtr_sens_13      |   132|
+|23    |    qtr_sens_16 |qtr_sens_14      |   146|
+|24    |    u_numerize  |numerize_sensors |   570|
+|25    |  u_ssd_ctrl    |ssd_ctrl         |   777|
++------+----------------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1266.855 ; gain = 508.516
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 39 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:00:46 . Memory (MB): peak = 1266.855 ; gain = 403.254
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1266.855 ; gain = 508.516
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.151 . Memory (MB): peak = 1278.813 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1002 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1278.813 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 16 instances
+  LDP => LDPE: 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+65 Infos, 90 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 1278.813 ; gain = 802.223
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1278.813 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Artifank/line_follower/line_follower.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 22 13:57:46 2019...

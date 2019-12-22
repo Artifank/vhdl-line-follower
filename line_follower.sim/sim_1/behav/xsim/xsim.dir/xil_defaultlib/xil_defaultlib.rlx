@@ -1,0 +1,12 @@
+0.6
+2019.2
+Oct 24 2019
+19:01:44
+C:/Users/Artifank/line_follower/line_follower.srcs/sim_1/new/testbench.vhd,1576435547,vhdl,,,,testbench,,,,,,,,
+C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/motor_ctrl.vhd,1576435400,vhdl,,,,motor_ctrl,,,,,,,,
+C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/numerize_sensors.vhd,1576416601,vhdl2008,,,,numerize_sensors,,,,,,,,
+C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/pwmv2.vhd,1576436242,vhdl,,,,pwm,,,,,,,,
+C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_sens.vhd,1576213710,vhdl2008,,,,qtr_sens,,,,,,,,
+C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/qtr_senss.vhd,1576419241,vhdl,,,,qtr_senss,,,,,,,,
+C:/Users/Artifank/line_follower/line_follower.srcs/sources_1/new/top.vhd,1576413927,vhdl,,,,top,,,,,,,,
+C:/Users/Artifank/qtr_sensor_test/qtr_sensor_test.srcs/sources_1/new/ssd_ctrl.vhd,1576123314,vhdl,,,,ssd_ctrl,,,,,,,,

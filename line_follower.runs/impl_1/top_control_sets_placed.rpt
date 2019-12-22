@@ -1,0 +1,159 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2700185 Thu Oct 24 18:46:05 MDT 2019
+| Date         : Sun Dec 22 13:59:01 2019
+| Host         : Artifank-PC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    81 |
+|    Minimum number of control sets                        |    81 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   225 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    81 |
+| >= 0 to < 4        |    17 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |    16 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    48 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             191 |           65 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             192 |           70 |
+| Yes          | No                    | No                     |             208 |           74 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             960 |          240 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------+--------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+|              Clock Signal              |                   Enable Signal                  |                    Set/Reset Signal                    | Slice Load Count | Bel Load Count |
++----------------------------------------+--------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+|  u_qtr_senss/qtr_sens_06/s_sens010_out |                                                  | u_qtr_senss/qtr_sens_06/s_sens0                        |                1 |              1 |
+|  u_qtr_senss/qtr_sens_13/s_sens010_out |                                                  | u_qtr_senss/qtr_sens_13/s_sens0                        |                1 |              1 |
+|  u_color_sens/s_color_sens             |                                                  |                                                        |                1 |              1 |
+|  u_qtr_senss/qtr_sens_07/s_sens010_out |                                                  | u_qtr_senss/qtr_sens_07/s_sens0                        |                1 |              1 |
+|  u_qtr_senss/qtr_sens_05/s_sens010_out |                                                  | u_qtr_senss/qtr_sens_05/s_sens0                        |                1 |              1 |
+|  u_qtr_senss/qtr_sens_04/s_sens010_out |                                                  | u_qtr_senss/qtr_sens_04/s_sens0                        |                1 |              1 |
+|  u_qtr_senss/qtr_sens_11/s_sens010_out |                                                  | u_qtr_senss/qtr_sens_11/s_sens0                        |                1 |              1 |
+|  u_qtr_senss/qtr_sens_14/s_sens010_out |                                                  | u_qtr_senss/qtr_sens_14/s_sens0                        |                1 |              1 |
+|  u_qtr_senss/qtr_sens_10/s_sens010_out |                                                  | u_qtr_senss/qtr_sens_10/s_sens0                        |                1 |              1 |
+|  u_qtr_senss/qtr_sens_15/s_sens010_out |                                                  | u_qtr_senss/qtr_sens_15/s_sens0                        |                1 |              1 |
+|  u_qtr_senss/qtr_sens_12/s_sens010_out |                                                  | u_qtr_senss/qtr_sens_12/s_sens0                        |                1 |              1 |
+|  u_qtr_senss/qtr_sens_09/s_sens010_out |                                                  | u_qtr_senss/qtr_sens_09/s_sens0                        |                1 |              1 |
+|  u_qtr_senss/qtr_sens_16/s_sens010_out |                                                  | u_qtr_senss/qtr_sens_16/s_sens0                        |                1 |              1 |
+|  u_qtr_senss/qtr_sens_01/s_sens010_out |                                                  | u_qtr_senss/qtr_sens_01/s_sens0                        |                1 |              1 |
+|  u_qtr_senss/qtr_sens_08/s_sens010_out |                                                  | u_qtr_senss/qtr_sens_08/s_sens0                        |                1 |              1 |
+|  u_qtr_senss/qtr_sens_02/s_sens010_out |                                                  | u_qtr_senss/qtr_sens_02/s_sens0                        |                1 |              1 |
+|  u_qtr_senss/qtr_sens_03/s_sens010_out |                                                  | u_qtr_senss/qtr_sens_03/s_sens0                        |                1 |              1 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_08/s_senss[6]_i_1__6_n_0    |                                                        |                1 |              6 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_14/s_senss[6]_i_1__12_n_0   |                                                        |                1 |              6 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_07/s_senss[6]_i_1__5_n_0    |                                                        |                2 |              6 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_10/s_senss[6]_i_1__8_n_0    |                                                        |                1 |              6 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_01/s_senss[6]_i_1_n_0       |                                                        |                1 |              6 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_11/s_senss[6]_i_1__9_n_0    |                                                        |                2 |              6 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_02/s_senss[6]_i_1__0_n_0    |                                                        |                1 |              6 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_15/s_senss[6]_i_1__13_n_0   |                                                        |                1 |              6 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_06/s_senss[6]_i_1__4_n_0    |                                                        |                2 |              6 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_03/s_senss[6]_i_1__1_n_0    |                                                        |                2 |              6 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_16/s_senss[6]_i_1__14_n_0   |                                                        |                1 |              6 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_04/s_senss[6]_i_1__2_n_0    |                                                        |                1 |              6 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_12/s_senss[6]_i_1__10_n_0   |                                                        |                2 |              6 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_13/s_senss[6]_i_1__11_n_0   |                                                        |                1 |              6 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_05/s_senss[6]_i_1__3_n_0    |                                                        |                1 |              6 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_09/s_senss[6]_i_1__7_n_0    |                                                        |                1 |              6 |
+|  clk_IBUF_BUFG                         |                                                  | u_qtr_senss/qtr_sens_16/p_1_in                         |               14 |             16 |
+|  clk_IBUF_BUFG                         | u_ssd_ctrl/clear                                 |                                                        |               12 |             16 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_07/s_counter[0]_i_1__5_n_0  | u_qtr_senss/qtr_sens_07/s_senss[6]_i_1__5_n_0          |                5 |             20 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_16/s_counter[0]_i_1__14_n_0 | u_qtr_senss/qtr_sens_16/s_senss[6]_i_1__14_n_0         |                5 |             20 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_13/s_counter[0]_i_1__11_n_0 | u_qtr_senss/qtr_sens_13/s_senss[6]_i_1__11_n_0         |                5 |             20 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_14/s_counter[0]_i_1__12_n_0 | u_qtr_senss/qtr_sens_14/s_senss[6]_i_1__12_n_0         |                5 |             20 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_15/s_counter[0]_i_1__13_n_0 | u_qtr_senss/qtr_sens_15/s_senss[6]_i_1__13_n_0         |                5 |             20 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_03/s_counter[0]_i_1__1_n_0  | u_qtr_senss/qtr_sens_03/s_senss[6]_i_1__1_n_0          |                5 |             20 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_01/s_counter[0]_i_1_n_0     | u_qtr_senss/qtr_sens_01/s_senss[6]_i_1_n_0             |                5 |             20 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_02/s_counter[0]_i_1__0_n_0  | u_qtr_senss/qtr_sens_02/s_senss[6]_i_1__0_n_0          |                5 |             20 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_09/s_counter[0]_i_1__7_n_0  | u_qtr_senss/qtr_sens_09/s_senss[6]_i_1__7_n_0          |                5 |             20 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_10/s_counter[0]_i_1__8_n_0  | u_qtr_senss/qtr_sens_10/s_senss[6]_i_1__8_n_0          |                5 |             20 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_11/s_counter[0]_i_1__9_n_0  | u_qtr_senss/qtr_sens_11/s_senss[6]_i_1__9_n_0          |                5 |             20 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_04/s_counter[0]_i_1__2_n_0  | u_qtr_senss/qtr_sens_04/s_senss[6]_i_1__2_n_0          |                5 |             20 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_05/s_counter[0]_i_1__3_n_0  | u_qtr_senss/qtr_sens_05/s_senss[6]_i_1__3_n_0          |                5 |             20 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_08/s_counter[0]_i_1__6_n_0  | u_qtr_senss/qtr_sens_08/s_senss[6]_i_1__6_n_0          |                5 |             20 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_06/s_counter[0]_i_1__4_n_0  | u_qtr_senss/qtr_sens_06/s_senss[6]_i_1__4_n_0          |                5 |             20 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_12/s_counter[0]_i_1__10_n_0 | u_qtr_senss/qtr_sens_12/s_senss[6]_i_1__10_n_0         |                5 |             20 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_06/s_setup_en               | u_qtr_senss/qtr_sens_06/s_setup_counter[0]_i_1__9_n_0  |                8 |             32 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_03/s_setup_en               | u_qtr_senss/qtr_sens_03/s_setup_counter[0]_i_1__12_n_0 |                8 |             32 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_05/s_setup_en               | u_qtr_senss/qtr_sens_05/s_setup_counter[0]_i_1__10_n_0 |                8 |             32 |
+|  clk_IBUF_BUFG                         | u_ssd_ctrl/s_slow_counter_reg[0]_i_1_n_5         | u_ssd_ctrl/s_refresh_counter                           |                8 |             32 |
+|  clk_IBUF_BUFG                         | u_color_sens/s_blue[31]_i_1_n_0                  |                                                        |               16 |             32 |
+|  clk_IBUF_BUFG                         | u_color_sens/s_counter_en                        | u_color_sens/s_blue_counter[0]_i_1_n_0                 |                8 |             32 |
+|  clk_IBUF_BUFG                         | u_color_sens/s_counter_en                        | u_color_sens/s_green_counter[0]_i_1_n_0                |                8 |             32 |
+|  clk_IBUF_BUFG                         | u_color_sens/s_counter_en                        | u_color_sens/s_red_counter[0]_i_1_n_0                  |                8 |             32 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_11/s_setup_en               | u_qtr_senss/qtr_sens_11/s_setup_counter[0]_i_1__4_n_0  |                8 |             32 |
+|  clk_IBUF_BUFG                         | u_color_sens/s_green[31]_i_1_n_0                 |                                                        |               14 |             32 |
+|  clk_IBUF_BUFG                         | u_color_sens/s_red_0                             |                                                        |               11 |             32 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_10/s_setup_en               | u_qtr_senss/qtr_sens_10/s_setup_counter[0]_i_1__5_n_0  |                8 |             32 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_09/s_setup_en               | u_qtr_senss/qtr_sens_09/s_setup_counter[0]_i_1__6_n_0  |                8 |             32 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_08/s_setup_en               | u_qtr_senss/qtr_sens_08/s_setup_counter[0]_i_1__7_n_0  |                8 |             32 |
+|  clk_IBUF_BUFG                         |                                                  | u_motor_ctrl/pwmR/pwm_counter1_carry__2_n_4            |                8 |             32 |
+|  clk_IBUF_BUFG                         |                                                  | u_motor_ctrl/pwmL/clear                                |                8 |             32 |
+|  clk_IBUF_BUFG                         |                                                  | u_ssd_ctrl/s_slow_counter_reg[0]_i_1_n_5               |                8 |             32 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_04/s_setup_en               | u_qtr_senss/qtr_sens_04/s_setup_counter[0]_i_1__11_n_0 |                8 |             32 |
+|  clk_IBUF_BUFG                         |                                                  | u_ssd_ctrl/clear                                       |                8 |             32 |
+|  clk_IBUF_BUFG                         |                                                  | clear                                                  |                8 |             32 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_15/s_setup_en               | u_qtr_senss/qtr_sens_15/s_setup_counter[0]_i_1__0_n_0  |                8 |             32 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_14/s_setup_en               | u_qtr_senss/qtr_sens_14/s_setup_counter[0]_i_1__1_n_0  |                8 |             32 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_01/s_setup_en               | u_qtr_senss/qtr_sens_01/s_setup_counter[0]_i_1__14_n_0 |                8 |             32 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_16/s_setup_en               | u_qtr_senss/qtr_sens_16/s_setup_counter[0]_i_1_n_0     |                8 |             32 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_13/s_setup_en               | u_qtr_senss/qtr_sens_13/s_setup_counter[0]_i_1__2_n_0  |                8 |             32 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_02/s_setup_en               | u_qtr_senss/qtr_sens_02/s_setup_counter[0]_i_1__13_n_0 |                8 |             32 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_12/s_setup_en               | u_qtr_senss/qtr_sens_12/s_setup_counter[0]_i_1__3_n_0  |                8 |             32 |
+|  clk_IBUF_BUFG                         | u_qtr_senss/qtr_sens_07/s_setup_en               | u_qtr_senss/qtr_sens_07/s_setup_counter[0]_i_1__8_n_0  |                8 |             32 |
+|  master_clk_BUFG                       |                                                  |                                                        |               20 |             53 |
+|  clk_IBUF_BUFG                         |                                                  |                                                        |               44 |            137 |
++----------------------------------------+--------------------------------------------------+--------------------------------------------------------+------------------+----------------+
+
+

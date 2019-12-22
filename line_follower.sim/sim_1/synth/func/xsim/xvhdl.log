@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Artifank/line_follower/line_follower.sim/sim_1/synth/func/xsim/testbench_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'pwm'
+INFO: [VRFC 10-3107] analyzing entity 'pwm_0'
+INFO: [VRFC 10-3107] analyzing entity 'line_follower'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Artifank/line_follower/line_follower.srcs/sim_1/new/testbench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testbench'

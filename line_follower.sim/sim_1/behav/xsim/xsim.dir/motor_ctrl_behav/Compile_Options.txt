@@ -1,0 +1,1 @@
+-wto "b07a167711a64f3685bbfb75028f1d78" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "motor_ctrl_behav" "xil_defaultlib.motor_ctrl" -log "elaborate.log" 
