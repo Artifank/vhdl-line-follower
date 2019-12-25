@@ -24,7 +24,7 @@ architecture rtl of motor_ctrl is
 	signal s_max_speed  : integer := 1000;
 	signal s_min_speed  : integer := 0;
 begin
-    s_base_speed <= 400 when (i_red > i_green and i_red > i_blue) else 600;
+    s_base_speed <= 300 when (i_red > i_green + 20 and i_red > i_blue + 20) else 600;
 	s_dutyL <= 0 when ((s_base_speed + i_pid) < 0) else s_max_speed when ((s_base_speed + i_pid) > s_max_speed) else (s_base_speed + i_pid);
 	s_dutyR <= 0 when ((s_base_speed - i_pid) < 0) else s_max_speed when ((s_base_speed - i_pid) > s_max_speed) else (s_base_speed - i_pid);
 	pwmL : pwm Port Map(clk => clk, i_duty => s_dutyL, o_pwm => o_pwmL);

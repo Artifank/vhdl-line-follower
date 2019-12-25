@@ -37,9 +37,9 @@ architecture rtl of color_sens is
 begin
     o_color_sens_en <= '1';
     o_color_scale   <= "11";
-    o_red   <= 0 when (s_red < k_red_min) else 255 when (s_red > k_red_max) else (225*(k_red_max - s_red)/(k_red_max - k_red_min));
-    o_green <= 0 when (s_green < k_green_min) else 255 when (s_green > k_green_max) else (225*(k_green_max - s_green)/(k_green_max - k_green_min));
-    o_blue  <= 0 when (s_blue < k_blue_min) else 255 when (s_blue > k_blue_max) else (225*(k_blue_max - s_blue)/(k_blue_max - k_blue_min));
+    o_red   <= 0 when (s_red < k_red_min) else 255 when (s_red > k_red_max) else (255*(k_red_max - s_red)/(k_red_max - k_red_min));
+    o_green <= 0 when (s_green < k_green_min) else 255 when (s_green > k_green_max) else (255*(k_green_max - s_green)/(k_green_max - k_green_min));
+    o_blue  <= 0 when (s_blue < k_blue_min) else 255 when (s_blue > k_blue_max) else (255*(k_blue_max - s_blue)/(k_blue_max - k_blue_min));
     process(master_clk)
     begin
         if rising_edge(master_clk) then

@@ -73,12 +73,16 @@ architecture rtl of top is
     signal s_blue     : integer;
     signal s_err      : integer;
 begin
-    s_disp_num <= s_err when i_sw(1 downto 0) = "00" else s_red when i_sw(1 downto 0) = "01" else s_green when i_sw(1 downto 0) = "10" else s_blue;
+    with i_sw(1 downto 0) select 
+        s_disp_num <= s_err when "00",
+                      s_red   when "01",
+                      s_green when "10",
+                      s_blue  when "11";
     io_JXADC(1) <= i_sw(15);
     io_JXADC(2) <= '0';
     io_JXADC(5) <= i_sw(15);
     io_JXADC(6) <= '0';
-    io_JC(3) <= i_sw(15);
+    io_JC(3) <= '1';
     u_qtr_senss  : qtr_senss      Port Map(clk          => clk, 
                                            master_clk   => master_clk, 
                                            io_qtr_senss(7 downto 0)  => io_JB,
