@@ -36,3 +36,5 @@ begin
         end if;
     end process;
 end line_follower_arch;
+
+-- grou project test by Batuhan Gumus
